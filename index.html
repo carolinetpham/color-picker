@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker!</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <canvas id="wheel" width="300" height="300"></canvas>
+    <div id="slider-container">
+        <label for="saturation-slider">Saturation:</label>
+        <input id="saturation-slider" type="range" min="0" max="100" value="100">
+    </div>
+    <div id="color-display"></div>
+    Hex: <span id="hex-code"></span>
+    <script src="js/app.js"></script>
+  </body>
+</html>

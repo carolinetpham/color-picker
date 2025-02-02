@@ -1,0 +1,17 @@
+
+#wheel {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    cursor: crosshair;
+    display: block;
+    margin: auto;
+}
+
+#color-display {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
