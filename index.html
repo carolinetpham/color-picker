@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <div class="title-text">
+        <h1 class="color-text">Color</h1>
+        <h1 class="picker-text">Picker</h1>
+    </div>
     <canvas id="wheel" width="300" height="300"></canvas>
-    <div id="slider-container">
+    <div class="slider-container">
         <label for="saturation-slider">Saturation:</label>
         <input id="saturation-slider" type="range" min="0" max="100" value="100">
     </div>
-    <div id="color-display"></div>
-    Hex: <span id="hex-code"></span>
+
+    <div class="slider-container">
+        <label for="brightness-slider">Brightness:</label>
+        <input id="brightness-slider" type="range" min="0" max="100" value="50">
+    </div>
+    <div class="color-display-hex">
+        <div id="color-display" onclick="copyToClipboard()"><span id="hex-code" onclick="copyToClipboard()">#FF000</span></div>
+    </div>
+    <div class="controls">
+        <button id="reset-button">Reset</button>
+    </div>
     <script src="js/app.js"></script>
   </body>
 </html>
