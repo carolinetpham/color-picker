@@ -156,7 +156,7 @@ function copyToClipboard() {
   navigator.clipboard
     .writeText(hexCode)
     .then(() => {
-      alert(`Copied to clipboard: ${hexCode}`);
+      alert(`${hexCode} copied!`);
     })
     .catch((err) => {
       console.error("Failed to copy: ", err);
